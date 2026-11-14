@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portlight</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header class="top">
+    <div class="bar">
+      <h1><svg class="mark" viewBox="26 14 84 100" width="20" height="24" aria-hidden="true">
+        <path d="M46 53V100" fill="none" stroke="var(--ink)" stroke-width="15" stroke-linecap="round"/>
+        <g fill="none" stroke-width="15" transform="rotate(180 71 53)">
+          <circle cx="71" cy="53" r="25" pathLength="100" stroke="var(--forex)" stroke-dasharray="40 60"/>
+          <circle cx="71" cy="53" r="25" pathLength="100" stroke="var(--stock)" stroke-dasharray="25 75" stroke-dashoffset="-43"/>
+          <circle cx="71" cy="53" r="25" pathLength="100" stroke="var(--crypto)" stroke-dasharray="26 74" stroke-dashoffset="-71"/>
+        </g>
+      </svg>Portlight</h1>
+      <div class="bar-actions">
+        <button id="refresh" class="icon-btn" title="Refresh prices" aria-label="Refresh prices">
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M16 10a6 6 0 1 1-1.8-4.3M16 3.5v3h-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="open-settings" class="icon-btn" title="Settings" aria-label="Settings">
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 6h8m4 0h2M3 14h2m4 0h8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="13" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="14" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="hero"></div>
+    <nav id="tabs" role="tablist" aria-label="Sections"></nav>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
